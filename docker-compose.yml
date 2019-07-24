@@ -1,0 +1,25 @@
+version: "2"
+services:
+  app:
+    container_name: app
+    command: npm run start
+    build: .
+    ports:
+      - "8000:8000"
+      - "80:9000"
+    environment:
+      NODE_ENV: production
+      RDS_USER: electroagua
+      RDS_PASSWORD: estas_autorizado
+      DATABASE_URL: db
+    depends_on:
+      - db
+    
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_USER=electroagua
+      - POSTGRES_PASSWORD=estas_autorizado
+      - POSTGRES_DB=postgres
+    ports:
+      - "5432:5432"

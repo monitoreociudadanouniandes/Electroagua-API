@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "68d6c583-e3d9-465b-8c5d-4cc89caea6a8",
+		"name": "appInventor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "registros",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/registros",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"registros"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/registros",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"registros"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	]
+}
